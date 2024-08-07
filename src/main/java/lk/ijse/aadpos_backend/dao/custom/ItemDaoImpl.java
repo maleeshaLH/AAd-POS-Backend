@@ -1,14 +1,14 @@
-package lk.ijse.aadpos_backend.dao;
+package lk.ijse.aadpos_backend.dao.custom;
 
+import lk.ijse.aadpos_backend.dao.ItemDao;
 import lk.ijse.aadpos_backend.db.DbConnection;
-import lk.ijse.aadpos_backend.dto.ItemDto;
 import lk.ijse.aadpos_backend.entity.Item;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class ItemDaoImpl implements  ItemDao{
+public class ItemDaoImpl implements ItemDao {
 private Connection connection;
 PreparedStatement pstm;
     public  static  String SAVE ="INSERT INTO item (itemId,ItemName,ItemQty,ItemPrice) VALUES(?,?,?,?)";
@@ -18,7 +18,7 @@ PreparedStatement pstm;
     public boolean save(Item item) throws SQLException, ClassNotFoundException {
         connection = DbConnection.getInstance().getConnection();
         pstm = connection.prepareStatement(SAVE);
-        pstm.setString(1, item.getItemId());
+        pstm.setInt(1, item.getItemId());
         pstm.setString(2, item.getItemName());
         pstm.setInt(3,item.getItemQty());
         pstm.setInt(4,item.getItemPrice());
@@ -32,7 +32,7 @@ PreparedStatement pstm;
         pstm.setString(1, item.getItemName());
         pstm.setInt(2, item.getItemQty());
         pstm.setInt(3, item.getItemPrice());
-        pstm.setString(4, item.getItemId());
+        pstm.setInt(4, item.getItemId());
         return pstm.executeUpdate() >0;
     }
 

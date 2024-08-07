@@ -1,13 +1,14 @@
-package lk.ijse.aadpos_backend.bo;
+package lk.ijse.aadpos_backend.bo.custom;
 
+import lk.ijse.aadpos_backend.bo.ItemBo;
 import lk.ijse.aadpos_backend.dao.ItemDao;
-import lk.ijse.aadpos_backend.dao.ItemDaoImpl;
+import lk.ijse.aadpos_backend.dao.custom.ItemDaoImpl;
 import lk.ijse.aadpos_backend.dto.ItemDto;
 import lk.ijse.aadpos_backend.entity.Item;
 
 import java.sql.SQLException;
 
-public class ItemBoImpl implements ItemBo{
+public class ItemBoImpl implements ItemBo {
 
     ItemDao itemDao = new ItemDaoImpl();
     @Override
