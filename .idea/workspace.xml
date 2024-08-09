@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="AAD-POS_Backend:war" />
       <artifact name="AAD-POS_Backend:war exploded" />
     </artifacts-to-build>
   </component>
@@ -10,21 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2521daf1-f91a-4f50-993b-837f10080487" name="Changes" comment="Item Update">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/CustomerBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/custom/CustomerBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/custom/CustomerDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/filter/CORSFilter.java" afterDir="false" />
+    <list default="true" id="2521daf1-f91a-4f50-993b-837f10080487" name="Changes" comment="Customer Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/OrderBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/custom/OrderBoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/custom/OrderDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/filter/Security.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3c526c06-839d-423b-ad91-dac4440b69a7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3c526c06-839d-423b-ad91-dac4440b69a7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/ItemBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/custom/ItemBoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/ItemDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/custom/ItemDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dto/ItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dto/ItemDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/CustomerBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/CustomerBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/custom/CustomerBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/bo/custom/CustomerBoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/CustomerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/custom/CustomerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dao/custom/CustomerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/filter/CORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/aadpos_backend/filter/CORSFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +78,7 @@
     "Tomcat Server.Tomcat 10.1.24.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/94765/Documents/html/Html Project/POS-system-using-JS",
+    "last_opened_file_path": "C:/Users/94765/Desktop/Web-Pos-Backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -179,7 +182,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="AAD-POS_Backend:war" />
           <artifact name="AAD-POS_Backend:war exploded" />
         </option>
       </method>
@@ -202,7 +204,10 @@
       <option name="presentableId" value="Default" />
       <updated>1723006500663</updated>
       <workItem from="1723006501695" duration="10283000" />
-      <workItem from="1723041828686" duration="12104000" />
+      <workItem from="1723041828686" duration="12218000" />
+      <workItem from="1723106771713" duration="3958000" />
+      <workItem from="1723122944338" duration="12638000" />
+      <workItem from="1723173891525" duration="9440000" />
     </task>
     <task id="LOCAL-00001" summary="Item Update">
       <option name="closed" value="true" />
@@ -212,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723044047931</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Customer Update">
+      <option name="closed" value="true" />
+      <created>1723058920848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723058920848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +233,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Item Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Item Update" />
+    <MESSAGE value="Customer Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer Update" />
   </component>
 </project>

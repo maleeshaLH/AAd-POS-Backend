@@ -998,7 +998,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="aad_backend">
-      <LastIntrospectionLocalTimestamp>2024-08-07.17:24:16</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-09.05:23:36</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="aad_pos">
@@ -1043,95 +1043,98 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="303" parent="1" name="performance_schema">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="304" parent="1" name="spring">
+    <schema id="304" parent="1" name="pos">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="305" parent="1" name="student">
+    <schema id="305" parent="1" name="spring">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="306" parent="1" name="sys">
+    <schema id="306" parent="1" name="student">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="307" parent="1" name="tuma">
+    <schema id="307" parent="1" name="sys">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <user id="308" parent="1" name="mysql.infoschema">
+    <schema id="308" parent="1" name="tuma">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <user id="309" parent="1" name="mysql.infoschema">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="309" parent="1" name="mysql.session">
+    <user id="310" parent="1" name="mysql.session">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="310" parent="1" name="mysql.sys">
+    <user id="311" parent="1" name="mysql.sys">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="311" parent="1" name="root">
+    <user id="312" parent="1" name="root">
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="312" parent="289" name="customer">
+    <table id="313" parent="289" name="customer">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="313" parent="289" name="item">
+    <table id="314" parent="289" name="item">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="314" parent="312" name="cusId">
-      <DasType>int|0s</DasType>
+    <column id="315" parent="313" name="cusId">
+      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="315" parent="312" name="cusName">
+    <column id="316" parent="313" name="cusName">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="316" parent="312" name="cusAddress">
+    <column id="317" parent="313" name="cusAddress">
       <DasType>varchar(50)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="317" parent="312" name="Salary">
+    <column id="318" parent="313" name="Salary">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="318" parent="312" name="PRIMARY">
+    <index id="319" parent="313" name="PRIMARY">
       <ColNames>cusId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="319" parent="312" name="PRIMARY">
+    <key id="320" parent="313" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="320" parent="313" name="itemId">
-      <DasType>int|0s</DasType>
+    <column id="321" parent="314" name="itemId">
+      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="321" parent="313" name="itemName">
+    <column id="322" parent="314" name="itemName">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="322" parent="313" name="itemQty">
+    <column id="323" parent="314" name="itemQty">
       <DasType>int|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="323" parent="313" name="itemPrice">
+    <column id="324" parent="314" name="itemPrice">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="324" parent="313" name="PRIMARY">
+    <index id="325" parent="314" name="PRIMARY">
       <ColNames>itemId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="325" parent="313" name="PRIMARY">
+    <key id="326" parent="314" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
