@@ -3,18 +3,18 @@ $(document).ready(function() {
     document.getElementById('submitCustomer').addEventListener('click', function() {
         const customerName = document.getElementById('customerName').value;
         const customerAddress = document.getElementById('customerAddress').value;
-        const customerMobile = document.getElementById('customerMobile').value;
+        const customerSalary = document.getElementById('customerMobile').value;
 
         const customerData = {
             name: customerName,
             address: customerAddress,
-            mobile: customerMobile
+            salary: customerSalary
         };
 
         const customerJSON = JSON.stringify(customerData);
 
         $.ajax({
-            url: "http://localhost:8080/Web_Pos_Backend_war_exploded/customer",
+            url: "http://localhost:8080/app/customer",
             type: "POST",
             data: customerJSON,
             contentType: "application/json; charset=utf-8",
@@ -34,18 +34,18 @@ $(document).ready(function() {
         const customerId = document.getElementById('customerId').value;
         const customerName = document.getElementById('customerName').value;
         const customerAddress = document.getElementById('customerAddress').value;
-        const customerMobile = document.getElementById('customerMobile').value;
+        const customerSalary = document.getElementById('customerMobile').value;
 
         const customerData = {
             name: customerName,
             address: customerAddress,
-            mobile: customerMobile
+            salary: customerSalary
         };
 
         const customerJSON = JSON.stringify(customerData);
 
         $.ajax({
-            url: `http://localhost:8080/Web_Pos_Backend_war_exploded/customer?id=${customerId}`,
+            url: `http://localhost:8080/app/customer?id=${customerId}`,
             type: "PUT",
             data: customerJSON,
             contentType: "application/json; charset=utf-8",
@@ -62,7 +62,7 @@ $(document).ready(function() {
     // Fetch and display customer data
     function loadCustomers() {
         $.ajax({
-            url: "http://localhost:8080/Web_Pos_Backend_war_exploded/customer",
+            url: "http://localhost:8080/app/customer",
             type: "GET",
             contentType: "application/json; charset=utf-8",
             success: function (response) {
@@ -73,7 +73,7 @@ $(document).ready(function() {
                         '<td>' + customer.id + '</td>' +
                         '<td>' + customer.name + '</td>' +
                         '<td>' + customer.address + '</td>' +
-                        '<td>' + customer.mobile + '</td>' +
+                        '<td>' + customer.salary + '</td>' +
                         '</tr>';
                     customerTable.append(row);
                 });
@@ -105,11 +105,11 @@ $(document).ready(function() {
                 var id = firstVisibleRow.find("td:nth-child(1)").text();
                 var customerName = firstVisibleRow.find("td:nth-child(2)").text();
                 var customerAddress = firstVisibleRow.find("td:nth-child(3)").text();
-                var customerMobile = firstVisibleRow.find("td:nth-child(4)").text();
+                var customerSalary = firstVisibleRow.find("td:nth-child(4)").text();
                 $("#customerId").val(id);
                 $("#customerName").val(customerName);
                 $("#customerAddress").val(customerAddress);
-                $("#customerMobile").val(customerMobile);
+                $("#customerMobile").val(customerSalary);
                 $("#updateCustomer").data("id", id); // Store customer ID for update
             }
         }
@@ -125,7 +125,7 @@ $(document).ready(function() {
         }
 
         $.ajax({
-            url: `http://localhost:8080/Web_Pos_Backend_war_exploded/customer?id=${customerId}`,
+            url: `http://localhost:8080/app/customer?id=${customerId}`,
             type: "DELETE",
             contentType: "application/json; charset=utf-8",
             success: function (response) {

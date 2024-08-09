@@ -124,6 +124,8 @@ public class CustomerController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        // Your existing code...
         try (PrintWriter writer = resp.getWriter()) {
             Jsonb jsonb = JsonbBuilder.create();
             CustomerDao customerDao = new CustomerDaoImpl();

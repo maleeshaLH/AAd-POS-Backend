@@ -20,7 +20,7 @@ $(document).ready(function() {
     // Load customers and populate the dropdown
     function loadCustomers() {
         $.ajax({
-            url: "http://localhost:8080/Web_Pos_Backend_war_exploded/customer",
+            url: "http://localhost:8080/app/customer",
             type: "GET",
             contentType: "application/json",
             success: function(response) {
@@ -47,7 +47,7 @@ $(document).ready(function() {
     // Load items and populate the dropdown
     function loadItems() {
         $.ajax({
-            url: "http://localhost:8080/Web_Pos_Backend_war_exploded/item",
+            url: "http://localhost:8080/app/item",
             type: "GET",
             contentType: "application/json",
             success: function(response) {
@@ -230,7 +230,7 @@ $(document).ready(function() {
         };
 
         $.ajax({
-            url: 'http://localhost:8080/Web_Pos_Backend_war_exploded/orders',
+            url: 'http://localhost:8080/app/orders',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(orderData),

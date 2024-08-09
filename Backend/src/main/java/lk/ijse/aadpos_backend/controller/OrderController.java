@@ -3,6 +3,7 @@ package lk.ijse.aadpos_backend.controller;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -21,6 +22,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Logger;
 
+@WebServlet(urlPatterns = "/orders")
 public class OrderController extends HttpServlet {
     static Logger logger = (Logger) LoggerFactory.getLogger(OrderController.class);
     private OrderBo orderBO;

@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Function to load order details
     function loadOrderDetails() {
         $.ajax({
-            url: "http://localhost:8080/Web_Pos_Backend_war_exploded/orders",
+            url: "http://localhost:8080/app/orders",
             type: "GET",
             contentType: "application/json",
             success: function(response) {
@@ -42,7 +42,7 @@ $(document).ready(function() {
     // Function to load all orders and populate the table
     function loadOrderDetails() {
         $.ajax({
-            url: "http://localhost:8080/Web_Pos_Backend_war_exploded/orders",
+            url: "http://localhost:8080/app/orders",
             type: "GET",
             contentType: "application/json",
             success: function(response) {

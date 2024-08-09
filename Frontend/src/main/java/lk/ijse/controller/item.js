@@ -18,7 +18,7 @@ $(document).ready(function () {
         const itemJSON = JSON.stringify(itemData);
   
         $.ajax({
-          url: "http://localhost:8080/Web_Pos_Backend_war_exploded/item",
+          url: "http://localhost:8080/app/item",
           type: "POST",
           data: itemJSON,
           contentType: "application/json; charset=utf-8",
@@ -50,7 +50,7 @@ document.getElementById('updateItem').addEventListener('click', function() {
   const itemJSON = JSON.stringify(itemData);
 
   $.ajax({
-      url: `http://localhost:8080/Web_Pos_Backend_war_exploded/item?code=${itemCode}`,
+      url: `http://localhost:8080/app/item?code=${itemCode}`,
       type: "PUT",
       data: itemJSON,
       contentType: "application/json; charset=utf-8",
@@ -67,7 +67,7 @@ document.getElementById('updateItem').addEventListener('click', function() {
 // Fetch and display item data
 function loadItems() {
   $.ajax({
-      url: "http://localhost:8080/Web_Pos_Backend_war_exploded/item",
+      url: "http://localhost:8080/app/item",
       type: "GET",
       contentType: "application/json; charset=utf-8",
       success: function (response) {
@@ -130,7 +130,7 @@ document.getElementById('deleteItem').addEventListener('click', function() {
   }
 
   $.ajax({
-      url: `http://localhost:8080/Web_Pos_Backend_war_exploded/item?code=${itemCode}`,
+      url: `http://localhost:8080/app/item?code=${itemCode}`,
       type: "DELETE",
       contentType: "application/json; charset=utf-8",
       success: function (response) {
