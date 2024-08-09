@@ -72,7 +72,7 @@ The project follows best coding practices, including:
    mvn clean install
    ```
 5. Deploy the `.war` file to Apache Tomcat.
-6. Access the application via `http://localhost:8080/Thogakade`.
+6. Access the application via `http://localhost:8080/app`.
 
 ## Contribution
 
