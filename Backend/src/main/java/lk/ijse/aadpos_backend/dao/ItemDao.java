@@ -1,9 +1,7 @@
 package lk.ijse.aadpos_backend.dao;
 
-import lk.ijse.aadpos_backend.dto.ItemDto;
 import lk.ijse.aadpos_backend.entity.Item;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 public interface ItemDao {

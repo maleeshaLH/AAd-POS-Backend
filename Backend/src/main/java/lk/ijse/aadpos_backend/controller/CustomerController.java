@@ -13,7 +13,6 @@ import lk.ijse.aadpos_backend.bo.CustomerBo;
 import lk.ijse.aadpos_backend.bo.custom.CustomerBoImpl;
 import lk.ijse.aadpos_backend.dao.CustomerDao;
 import lk.ijse.aadpos_backend.dao.custom.CustomerDaoImpl;
-import lk.ijse.aadpos_backend.db.DbConnection;
 import lk.ijse.aadpos_backend.dto.CustomerDto;
 
 import javax.naming.InitialContext;

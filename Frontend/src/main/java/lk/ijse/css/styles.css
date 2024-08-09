@@ -1,0 +1,17 @@
+/* Custom CSS here */
+body {
+    background-color: #579BB1;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.section {
+    display: none;
+}
+.section.active {
+    display: block;
+}
+
+.new-row {
+    transition: background-color 0.5s ease;
+}
